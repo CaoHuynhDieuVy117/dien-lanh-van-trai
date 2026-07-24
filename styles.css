@@ -2718,3 +2718,220 @@ h3,
     font-size: 2.2rem;
   }
 }
+
+
+/* Fill the work-grid gap with real refrigerators — v15 */
+.work-grid {
+  height: auto;
+  grid-template-rows: repeat(2, 310px) 520px;
+}
+
+.work-grid > figure:nth-child(5) {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.work-grid > .work-fridge-story {
+  grid-column: 2 / -1;
+  grid-row: 3;
+  min-width: 0;
+  height: 520px;
+  margin: 0;
+  padding: 10px;
+  grid-template-columns: minmax(230px, 0.58fr) minmax(0, 1.42fr);
+  gap: 10px;
+  border-radius: 22px;
+}
+
+.work-grid > .work-fridge-story .work-fridge-copy {
+  padding: 25px 22px;
+  border-radius: 16px;
+}
+
+.work-grid > .work-fridge-story .work-fridge-copy > span {
+  font-size: 0.68rem;
+}
+
+.work-grid > .work-fridge-story .work-fridge-copy h3 {
+  margin-top: 13px;
+  font-size: clamp(2rem, 2.5vw, 2.75rem);
+  line-height: 1;
+}
+
+.work-grid > .work-fridge-story .work-fridge-copy h3 em {
+  margin-top: 6px;
+}
+
+.work-grid > .work-fridge-story .work-fridge-copy p {
+  margin-top: 15px;
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.work-grid > .work-fridge-story .work-fridge-points {
+  margin-top: 15px;
+  gap: 6px;
+}
+
+.work-grid > .work-fridge-story .work-fridge-points span {
+  min-height: 29px;
+  padding-inline: 9px;
+  font-size: 0.66rem;
+}
+
+.work-grid > .work-fridge-story .work-fridge-link {
+  min-height: 43px;
+  margin-top: 16px;
+  padding-inline: 15px;
+  font-size: 0.78rem;
+}
+
+.work-grid > .work-fridge-story .work-fridge-gallery {
+  grid-template-rows: minmax(0, 1fr) 148px;
+  gap: 8px;
+}
+
+.work-grid > .work-fridge-story .work-fridge-gallery figure {
+  border-radius: 15px;
+}
+
+.work-grid > .work-fridge-story .work-fridge-gallery figcaption {
+  padding: 9px 11px 10px;
+}
+
+.work-grid > .work-fridge-story .work-fridge-gallery figcaption strong {
+  font-size: 0.78rem;
+}
+
+.work-grid > .work-fridge-story .work-fridge-gallery figcaption span {
+  font-size: 0.68rem;
+}
+
+.work-grid > .work-fridge-story .work-fridge-list {
+  gap: 7px;
+}
+
+.work-grid > .work-fridge-story .work-fridge-list figure {
+  height: 148px;
+}
+
+@media (max-width: 980px) {
+  .work-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: none;
+    grid-auto-rows: 250px;
+  }
+
+  .work-grid > figure:first-child,
+  .work-grid > figure:nth-child(2),
+  .work-grid > figure:nth-child(5) {
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+
+  .work-grid > figure:first-child {
+    height: 380px;
+  }
+
+  .work-grid > .work-fridge-story {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .work-grid > .work-fridge-story .work-fridge-gallery {
+    grid-template-rows: minmax(420px, 1fr) auto;
+  }
+
+  .work-grid > .work-fridge-story .work-fridge-list figure {
+    height: 230px;
+  }
+}
+
+@media (max-width: 680px) {
+  .work-grid {
+    grid-auto-rows: auto;
+  }
+
+  .work-grid > figure:first-child {
+    height: 255px;
+  }
+
+  .work-grid > figure:nth-child(2) {
+    height: 185px;
+  }
+
+  .work-grid > figure:nth-child(5) {
+    height: 205px;
+  }
+
+  .work-grid > .work-fridge-story {
+    margin-top: 4px;
+    padding: 9px;
+    gap: 9px;
+  }
+
+  .work-grid > .work-fridge-story .work-fridge-copy {
+    padding: 29px 21px 24px;
+  }
+
+  .work-grid > .work-fridge-story .work-fridge-copy > span {
+    font-size: 0.69rem;
+  }
+
+  .work-grid > .work-fridge-story .work-fridge-copy h3 {
+    font-size: clamp(2.25rem, 10vw, 2.75rem);
+    line-height: 1.02;
+  }
+
+  .work-grid > .work-fridge-story .work-fridge-copy p {
+    margin-top: 19px;
+    font-size: 0.88rem;
+    line-height: 1.62;
+  }
+
+  .work-grid > .work-fridge-story .work-fridge-points {
+    margin-top: 19px;
+  }
+
+  .work-grid > .work-fridge-story .work-fridge-points span {
+    min-height: 32px;
+    padding-inline: 10px;
+    font-size: 0.71rem;
+  }
+
+  .work-grid > .work-fridge-story .work-fridge-link {
+    min-height: 47px;
+    margin-top: 20px;
+    font-size: 0.86rem;
+  }
+
+  .work-grid > .work-fridge-story .work-fridge-gallery {
+    grid-template-rows: auto auto;
+  }
+
+  .work-grid > .work-fridge-story .work-fridge-main-photo {
+    height: 445px;
+  }
+
+  .work-grid > .work-fridge-story .work-fridge-list {
+    grid-template-columns: 1fr;
+  }
+
+  .work-grid > .work-fridge-story .work-fridge-list figure {
+    height: 305px;
+  }
+
+  .work-grid > .work-fridge-story .work-fridge-gallery figcaption {
+    padding: 12px 13px 13px;
+  }
+
+  .work-grid > .work-fridge-story .work-fridge-gallery figcaption strong {
+    font-size: 0.9rem;
+  }
+
+  .work-grid > .work-fridge-story .work-fridge-gallery figcaption span {
+    font-size: 0.76rem;
+  }
+}
