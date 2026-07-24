@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://caohuynhdieuvy117.github.io/dien-lanh-van-trai/sitemap.xml
