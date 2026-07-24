@@ -1614,3 +1614,33 @@ summary {
     line-height: 1.08;
   }
 }
+
+
+/* Centered headline with wider Vietnamese spacing — v11 */
+.hero-panel .micro-label {
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-panel h1 {
+  width: 100%;
+  justify-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.hero-panel h1 > span,
+.hero-panel h1 > em {
+  line-height: 1.08;
+}
+
+@media (max-width: 680px) {
+  .hero-panel h1 {
+    gap: 14px;
+  }
+
+  .hero-panel h1 > span,
+  .hero-panel h1 > em {
+    line-height: 1.1;
+  }
+}
