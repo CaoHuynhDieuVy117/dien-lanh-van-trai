@@ -2935,3 +2935,67 @@ h3,
     font-size: 0.76rem;
   }
 }
+
+
+/* Isolate nested fridge cards from work-grid rules — v16 */
+.work-grid > .work-fridge-story {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.work-grid > .work-fridge-story > * {
+  min-width: 0;
+  min-height: 0;
+}
+
+.work-grid > .work-fridge-story .work-fridge-gallery {
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.work-grid > .work-fridge-story .work-fridge-gallery > figure,
+.work-grid > .work-fridge-story .work-fridge-gallery > figure:first-child,
+.work-grid > .work-fridge-story .work-fridge-gallery > figure:nth-child(2),
+.work-grid > .work-fridge-story .work-fridge-list > figure,
+.work-grid > .work-fridge-story .work-fridge-list > figure:first-child,
+.work-grid > .work-fridge-story .work-fridge-list > figure:nth-child(2) {
+  width: auto;
+  min-width: 0;
+  min-height: 0;
+  grid-column: auto;
+  grid-row: auto;
+}
+
+.work-grid > .work-fridge-story .work-fridge-main-photo {
+  height: auto;
+}
+
+.work-grid > .work-fridge-story .work-fridge-list {
+  min-height: 0;
+  grid-template-rows: 148px;
+}
+
+@media (max-width: 980px) {
+  .work-grid > .work-fridge-story {
+    overflow: visible;
+  }
+
+  .work-grid > .work-fridge-story .work-fridge-gallery {
+    overflow: visible;
+  }
+
+  .work-grid > .work-fridge-story .work-fridge-list {
+    grid-template-rows: auto;
+  }
+}
+
+@media (max-width: 680px) {
+  .work-grid > .work-fridge-story .work-fridge-main-photo {
+    height: 445px;
+  }
+
+  .work-grid > .work-fridge-story .work-fridge-list {
+    grid-template-rows: repeat(3, 305px);
+  }
+}
