@@ -1644,3 +1644,29 @@ summary {
     line-height: 1.1;
   }
 }
+
+
+/* Vietnamese glyph and poster badge fix — v12 */
+.hero-panel h1 {
+  font-family: Arial, "Segoe UI", sans-serif;
+  font-size: clamp(2.6rem, 3.45vw, 4.45rem);
+  letter-spacing: -0.04em;
+}
+
+.hero-panel h1 > em {
+  font-weight: 900;
+  letter-spacing: -0.018em;
+  line-height: 1.12;
+}
+
+@media (max-width: 680px) {
+  .hero-panel h1 {
+    font-size: clamp(2.4rem, 11.5vw, 3.18rem);
+    letter-spacing: -0.032em;
+  }
+
+  .hero-panel h1 > em {
+    letter-spacing: -0.012em;
+    line-height: 1.14;
+  }
+}
