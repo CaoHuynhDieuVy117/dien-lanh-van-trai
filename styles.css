@@ -1588,3 +1588,29 @@ summary {
     font-size: 2.45rem;
   }
 }
+
+
+/* Vietnamese headline spacing fix — v10 */
+.hero-panel h1 {
+  display: grid;
+  gap: 7px;
+  line-height: 1;
+}
+
+.hero-panel h1 > span,
+.hero-panel h1 > em {
+  display: block;
+  line-height: 1.06;
+}
+
+@media (max-width: 680px) {
+  .hero-panel h1 {
+    gap: 8px;
+    line-height: 1;
+  }
+
+  .hero-panel h1 > span,
+  .hero-panel h1 > em {
+    line-height: 1.08;
+  }
+}
