@@ -1,0 +1,123 @@
+/* V23: ảnh Việc thật đồng kích cỡ trên mobile và icon liên hệ hiện đại */
+
+.contact-mark{
+  display:inline-grid;
+  place-items:center;
+  flex:0 0 auto;
+  vertical-align:middle;
+}
+.contact-mark-phone{
+  width:22px;
+  height:22px;
+}
+.contact-mark-phone svg{
+  width:100%;
+  height:100%;
+  display:block;
+}
+.contact-mark-zalo{
+  min-width:34px;
+  height:30px;
+  padding:0 6px;
+  border-radius:9px;
+  background:#fff;
+  color:#0068ff;
+  border:1px solid rgba(0,104,255,.2);
+  font-family:Arial,sans-serif;
+  font-size:.62rem;
+  font-weight:900;
+  letter-spacing:-.03em;
+  box-shadow:0 5px 14px rgba(0,0,0,.15);
+}
+.header-call,
+.hero-actions .button,
+.final-cta .button,
+.mobile-contact a{
+  gap:9px;
+}
+.header-call .contact-mark-phone{
+  width:19px;
+  height:19px;
+}
+.hero-actions .contact-mark-phone,
+.final-cta .contact-mark-phone{
+  width:22px;
+  height:22px;
+}
+.hero-actions .contact-mark-zalo,
+.final-cta .contact-mark-zalo{
+  min-width:32px;
+  height:28px;
+}
+
+@media (max-width:760px){
+  /* Tất cả ảnh trong mục Việc thật đều full ngang, không còn hai ảnh bé */
+  .work-grid{
+    grid-template-columns:1fr;
+    gap:12px;
+  }
+  .work-grid .work-card,
+  .work-grid .work-wide,
+  .work-grid .work-tall,
+  .work-grid .work-card:nth-child(4){
+    grid-column:1 / -1;
+    min-height:250px;
+  }
+  .work-grid .work-card img{
+    min-height:250px;
+    object-fit:cover;
+  }
+
+  /* Hủy icon giả từ bản cũ, dùng icon thật trong HTML */
+  .mobile-contact a{
+    min-height:60px;
+    gap:12px;
+    font-size:.98rem;
+    border-radius:16px;
+  }
+  .mobile-contact a::before,
+  .mobile-contact a::after{
+    content:none !important;
+    display:none !important;
+  }
+  .mobile-contact .contact-mark-phone{
+    width:38px;
+    height:38px;
+    padding:8px;
+    border-radius:12px;
+    color:#7c2d00;
+    background:rgba(255,255,255,.78);
+    box-shadow:0 5px 14px rgba(0,0,0,.18);
+  }
+  .mobile-contact .contact-mark-zalo{
+    min-width:48px;
+    height:38px;
+    padding:0 8px;
+    border-radius:12px;
+    font-size:.76rem;
+  }
+}
+
+@media (max-width:380px){
+  .work-grid .work-card,
+  .work-grid .work-wide,
+  .work-grid .work-tall,
+  .work-grid .work-card:nth-child(4){
+    min-height:220px;
+  }
+  .work-grid .work-card img{
+    min-height:220px;
+  }
+  .mobile-contact a{
+    font-size:.9rem;
+  }
+  .mobile-contact .contact-mark-phone{
+    width:34px;
+    height:34px;
+  }
+  .mobile-contact .contact-mark-zalo{
+    min-width:43px;
+    height:34px;
+    font-size:.68rem;
+  }
+}
