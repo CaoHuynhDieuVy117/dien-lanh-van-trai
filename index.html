@@ -20,6 +20,176 @@
   <link rel="stylesheet" href="updates-v35.css?v=20260727-v35">
   <link rel="stylesheet" href="updates-v36.css?v=20260727-v41">
   <link rel="stylesheet" href="updates-v42.css?v=20260727-v42">
+  <style>
+    /* V43: cụm liên hệ nổi trên điện thoại giống mẫu tham khảo */
+    @media (max-width:760px){
+      body{padding-bottom:92px !important;}
+
+      .mobile-contact{
+        position:fixed !important;
+        inset:auto !important;
+        left:12px !important;
+        right:auto !important;
+        bottom:16px !important;
+        z-index:1000 !important;
+        width:auto !important;
+        min-width:0 !important;
+        height:auto !important;
+        padding:0 !important;
+        display:flex !important;
+        align-items:center !important;
+        background:transparent !important;
+        border:0 !important;
+        box-shadow:none !important;
+        opacity:1 !important;
+        transform:none !important;
+        pointer-events:auto !important;
+      }
+
+      .mobile-contact > a{
+        min-width:0 !important;
+        border:0 !important;
+        box-shadow:0 10px 28px rgba(0,0,0,.32) !important;
+      }
+
+      .mobile-contact > a:first-child{
+        width:auto !important;
+        min-width:190px !important;
+        min-height:52px !important;
+        padding:0 16px 0 10px !important;
+        display:flex !important;
+        align-items:center !important;
+        justify-content:flex-start !important;
+        gap:10px !important;
+        border-radius:15px !important;
+        background:linear-gradient(135deg,#69d35f 0%,#35ad47 100%) !important;
+        color:#fff !important;
+      }
+
+      .mobile-contact > a:first-child .contact-mark{
+        width:35px !important;
+        height:35px !important;
+        flex:0 0 35px !important;
+        display:grid !important;
+        place-items:center !important;
+        border:2px solid rgba(255,255,255,.82) !important;
+        border-radius:50% !important;
+        background:rgba(255,255,255,.12) !important;
+        color:#fff !important;
+      }
+
+      .mobile-contact > a:first-child .contact-mark svg{
+        width:20px !important;
+        height:20px !important;
+      }
+
+      .mobile-contact > a:first-child > span:last-child{
+        font-size:0 !important;
+      }
+
+      .mobile-contact > a:first-child > span:last-child::after{
+        content:"0387 971 339";
+        font-size:1.02rem !important;
+        font-weight:900 !important;
+        line-height:1 !important;
+        letter-spacing:.015em;
+        white-space:nowrap;
+      }
+
+      .mobile-contact > a:nth-child(2){
+        position:fixed !important;
+        right:14px !important;
+        bottom:92px !important;
+        width:55px !important;
+        height:55px !important;
+        min-height:55px !important;
+        padding:0 !important;
+        display:grid !important;
+        place-items:center !important;
+        border-radius:50% !important;
+        background:linear-gradient(145deg,#36b8ff,#1689df) !important;
+        color:#fff !important;
+      }
+
+      .mobile-contact > a:nth-child(2) .contact-mark-zalo{
+        width:43px !important;
+        height:43px !important;
+        display:grid !important;
+        place-items:center !important;
+        border-radius:50% !important;
+        background:#fff !important;
+        color:#1689df !important;
+        font-size:.72rem !important;
+        font-weight:900 !important;
+      }
+
+      .mobile-contact > a:nth-child(2) > span:last-child{
+        display:none !important;
+      }
+
+      .final-cta-box .facebook-link{
+        position:fixed !important;
+        right:14px !important;
+        bottom:28px !important;
+        z-index:1000 !important;
+        width:55px !important;
+        height:55px !important;
+        min-height:55px !important;
+        margin:0 !important;
+        padding:0 !important;
+        display:grid !important;
+        place-items:center !important;
+        overflow:hidden !important;
+        border:0 !important;
+        border-radius:50% !important;
+        background:linear-gradient(145deg,#7c5cff 0%,#1478ff 52%,#13b6ff 100%) !important;
+        color:#fff !important;
+        font-size:0 !important;
+        box-shadow:0 10px 28px rgba(0,0,0,.32) !important;
+      }
+
+      .final-cta-box .facebook-link span{
+        width:auto !important;
+        height:auto !important;
+        display:block !important;
+        background:transparent !important;
+        color:#fff !important;
+        font-size:0 !important;
+      }
+
+      .final-cta-box .facebook-link span::after{
+        content:"⚡";
+        display:block;
+        color:#fff;
+        font-size:1.45rem;
+        line-height:1;
+        transform:rotate(-8deg);
+      }
+
+      .final-cta-box .facebook-link b{
+        display:none !important;
+      }
+    }
+
+    @media (max-width:390px){
+      .mobile-contact > a:first-child{
+        min-width:176px !important;
+        padding-right:13px !important;
+      }
+
+      .mobile-contact > a:first-child > span:last-child::after{
+        font-size:.94rem !important;
+      }
+
+      .mobile-contact > a:nth-child(2),
+      .final-cta-box .facebook-link{
+        right:10px !important;
+        width:52px !important;
+        height:52px !important;
+        min-height:52px !important;
+      }
+    }
+  </style>
 </head>
 <body>
   <script type="application/ld+json">
@@ -262,12 +432,12 @@
     </div>
   </footer>
 
-  <nav class="mobile-contact" aria-label="Liên hệ nhanh">
-    <a href="tel:0387971339">
+  <nav class="mobile-contact show" aria-label="Liên hệ nhanh">
+    <a href="tel:0387971339" aria-label="Gọi 0387 971 339">
       <span class="contact-mark contact-mark-phone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="6" y="2" width="12" height="20" rx="2.5" stroke="currentColor" stroke-width="2"/><path d="M10 5h4M11 18h2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
       <span>Gọi ngay</span>
     </a>
-    <a href="https://zalo.me/0387971339" target="_blank" rel="noreferrer">
+    <a href="https://zalo.me/0387971339" target="_blank" rel="noreferrer" aria-label="Nhắn Zalo">
       <span class="contact-mark contact-mark-zalo" aria-hidden="true">Zalo</span>
       <span>Zalo</span>
     </a>
@@ -276,11 +446,10 @@
   <script>
     const mobileBar = document.querySelector('.mobile-contact');
     const toggleMobileBar = () => {
-      if (!mobileBar || window.innerWidth > 760) return;
-      if (window.scrollY > 520) mobileBar.classList.add('show');
+      if (!mobileBar) return;
+      if (window.innerWidth <= 760) mobileBar.classList.add('show');
       else mobileBar.classList.remove('show');
     };
-    window.addEventListener('scroll', toggleMobileBar, { passive: true });
     window.addEventListener('resize', toggleMobileBar);
     toggleMobileBar();
   </script>
