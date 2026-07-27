@@ -1,10 +1,10 @@
-/* V36: căn giữa toàn bộ mục Dịch vụ tận nơi */
+/* V40: làm mới toàn bộ mục Dịch vụ tận nơi */
 
 .services-section .section-heading,
 .services-section .section-heading-dark{
   width:100%;
-  max-width:900px;
-  margin:0 auto 34px !important;
+  max-width:920px;
+  margin:0 auto 38px !important;
   text-align:center !important;
 }
 
@@ -24,58 +24,79 @@
 }
 
 .services-section .service-grid{
+  display:grid;
   gap:16px;
 }
 
 .services-section .service-card{
   position:relative;
-  min-height:172px;
-  padding:26px 86px !important;
+  min-height:178px;
+  padding:28px 104px !important;
   display:flex !important;
   flex-direction:column;
   align-items:center !important;
   justify-content:center !important;
   gap:12px !important;
+  overflow:hidden;
   text-align:center !important;
+  border:1px solid rgba(102,195,255,.24);
+  border-radius:24px;
   background:linear-gradient(180deg,#0b2033 0%,#081725 100%);
-  border-color:rgba(102,195,255,.22);
 }
 
+.services-section .service-card:hover{
+  border-color:rgba(255,188,59,.52);
+  transform:translateY(-2px);
+}
+
+/* Số thứ tự 01–04: làm thành nhãn lớn, rõ */
 .services-section .service-card .service-number{
   position:absolute;
-  left:24px;
+  left:26px;
   top:50%;
   transform:translateY(-50%);
-  width:38px;
-  color:#83a8c4 !important;
-  font-size:.88rem !important;
-  font-weight:900;
+  width:64px;
+  height:64px;
+  display:grid;
+  place-items:center;
+  border:1px solid rgba(120,214,255,.28);
+  border-radius:18px;
+  background:linear-gradient(145deg,rgba(20,64,99,.95),rgba(8,32,53,.96));
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.025),0 10px 28px rgba(0,0,0,.18);
+  color:#bde8ff !important;
+  font-size:1.35rem !important;
+  font-weight:900 !important;
+  line-height:1 !important;
+  letter-spacing:.04em;
   text-align:center;
+  opacity:1 !important;
 }
 
 .services-section .service-card .service-icon{
-  width:56px !important;
-  height:56px !important;
+  width:58px !important;
+  height:58px !important;
+  display:grid !important;
+  place-items:center !important;
   margin:0 auto;
-  font-size:1.35rem !important;
+  border-radius:17px !important;
+  font-size:1.4rem !important;
 }
 
 .services-section .service-card > span:nth-child(3){
   width:100%;
-  max-width:620px;
+  max-width:650px;
   display:flex;
   flex-direction:column;
   align-items:center;
   justify-content:center;
-  gap:6px;
+  gap:7px;
   text-align:center !important;
 }
 
 .services-section .service-card strong,
 .services-section .service-card small{
   width:100%;
-  margin-left:auto;
-  margin-right:auto;
+  margin:0 auto;
   text-align:center !important;
 }
 
@@ -87,25 +108,30 @@
 
 .services-section .service-card small{
   color:#cfe1ee;
-  font-size:1.02rem !important;
+  font-size:1.03rem !important;
   line-height:1.5 !important;
 }
 
 .services-section .service-card > b{
   position:absolute;
-  right:26px;
+  right:28px;
   top:50%;
   transform:translateY(-50%);
-  width:34px;
+  width:42px;
+  height:42px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:rgba(255,188,59,.08);
   color:#ffbc3b;
-  font-size:1.35rem !important;
+  font-size:1.4rem !important;
   text-align:center;
 }
 
 @media (max-width:760px){
   .services-section .section-heading,
   .services-section .section-heading-dark{
-    margin-bottom:28px !important;
+    margin-bottom:30px !important;
     padding-inline:6px;
   }
 
@@ -116,32 +142,35 @@
   }
 
   .services-section .service-card{
-    min-height:178px;
-    padding:24px 58px !important;
+    min-height:184px;
+    padding:26px 72px !important;
     border-radius:22px;
     gap:11px !important;
   }
 
   .services-section .service-card .service-number{
     left:14px;
-    width:30px;
-    font-size:.78rem !important;
+    width:52px;
+    height:52px;
+    border-radius:15px;
+    font-size:1.12rem !important;
   }
 
   .services-section .service-card .service-icon{
-    width:52px !important;
-    height:52px !important;
-    font-size:1.25rem !important;
+    width:54px !important;
+    height:54px !important;
+    font-size:1.3rem !important;
   }
 
   .services-section .service-card > b{
     right:14px;
-    width:26px;
+    width:36px;
+    height:36px;
     font-size:1.2rem !important;
   }
 
   .services-section .service-card strong{
-    font-size:1.75rem !important;
+    font-size:1.78rem !important;
   }
 
   .services-section .service-card small{
@@ -151,10 +180,32 @@
   }
 }
 
-/* V38: đổi nhãn khu vực đầu trang */
+@media (max-width:390px){
+  .services-section .service-card{
+    min-height:188px;
+    padding-left:66px !important;
+    padding-right:58px !important;
+  }
+
+  .services-section .service-card .service-number{
+    left:10px;
+    width:48px;
+    height:48px;
+    font-size:1.04rem !important;
+  }
+
+  .services-section .service-card > b{
+    right:10px;
+    width:34px;
+    height:34px;
+  }
+}
+
+/* Nhãn khu vực đầu trang */
 .hero .eyebrow{
   font-size:0 !important;
 }
+
 .hero .eyebrow::after{
   content:"⌖ Tư Nghĩa · Quảng Ngãi";
   display:inline-block;
