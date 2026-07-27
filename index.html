@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="styles.css?v=20260725-v21">
   <link rel="stylesheet" href="updates-v21.css?v=20260725-v22">
   <link rel="stylesheet" href="updates-v23.css?v=20260725-v32">
+  <link rel="stylesheet" href="updates-v33.css?v=20260727-v33">
 </head>
 <body>
   <script type="application/ld+json">
@@ -100,21 +101,33 @@
     <section class="section choice-section" id="san-pham">
       <div class="container">
         <header class="section-heading">
-          <p>Chọn nhanh</p>
-          <h2>Bạn cần gì?</h2>
+          <p>Chọn nhanh · Báo giá rõ ràng</p>
+          <h2>Bạn cần gì hôm nay?</h2>
         </header>
         <div class="choice-grid clean-grid">
           <a class="choice-card clean-card" href="https://zalo.me/0387971339" target="_blank" rel="noreferrer">
-            <div class="clean-card-image"><img src="images/may-lanh-phang-v24.svg" alt="Máy lạnh 1 HP inverter màu trắng"></div>
-            <div class="clean-card-body"><small>Máy lạnh 1 HP</small><strong>6–11 triệu</strong><em>Máy mới · Tư vấn đúng công suất</em></div>
+            <div class="clean-card-image"><img src="images/may-lanh-phang-v24.svg" alt="Máy lạnh inverter 1 HP màu trắng"></div>
+            <div class="clean-card-body">
+              <small>Máy lạnh inverter 1 HP</small>
+              <strong>Mát nhanh từ 6–11 triệu</strong>
+              <em>Máy mới · Tư vấn đúng công suất · Hỗ trợ lắp đặt</em>
+            </div>
           </a>
           <a class="choice-card clean-card" href="#tu-lanh">
             <div class="clean-card-image"><img src="images/tu-lanh-phang-v26.svg" alt="Tủ lạnh Samsung hai cửa màu bạc"></div>
-            <div class="clean-card-body"><small>Ảnh thật tại cửa hàng</small><strong>Từ 2 triệu</strong><em>Tủ lạnh cũ &amp; mới · Xem đúng máy</em></div>
+            <div class="clean-card-body">
+              <small>Tủ lạnh cũ &amp; mới</small>
+              <strong>Giá tốt từ 2 triệu</strong>
+              <em>Xem đúng máy thật · Kiểm tra trước khi mua</em>
+            </div>
           </a>
           <a class="choice-card clean-card" href="tel:0387971339">
             <div class="clean-card-image"><img src="images/cong-trinh-bao-tri.webp" alt="Thợ điện lạnh có mặt tận nơi"></div>
-            <div class="clean-card-body"><small>Sửa · lắp · vệ sinh</small><strong>Có mặt tận nơi</strong><em>La Hà và khu vực lân cận</em></div>
+            <div class="clean-card-body">
+              <small>Sửa · Lắp · Vệ sinh</small>
+              <strong>Gọi là có mặt</strong>
+              <em>Báo giá trước · Phục vụ La Hà và khu vực lân cận</em>
+            </div>
           </a>
         </div>
       </div>
@@ -261,11 +274,8 @@
     const mobileBar = document.querySelector('.mobile-contact');
     const toggleMobileBar = () => {
       if (!mobileBar || window.innerWidth > 760) return;
-      if (window.scrollY > 520) {
-        mobileBar.classList.add('show');
-      } else {
-        mobileBar.classList.remove('show');
-      }
+      if (window.scrollY > 520) mobileBar.classList.add('show');
+      else mobileBar.classList.remove('show');
     };
     window.addEventListener('scroll', toggleMobileBar, { passive: true });
     window.addEventListener('resize', toggleMobileBar);
