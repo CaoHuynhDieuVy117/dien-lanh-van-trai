@@ -1,0 +1,130 @@
+/* V36: căn giữa toàn bộ mục Dịch vụ tận nơi */
+
+.services-section .section-heading,
+.services-section .section-heading-dark{
+  width:100%;
+  max-width:900px;
+  margin:0 auto 34px !important;
+  text-align:center !important;
+}
+
+.services-section .section-heading p,
+.services-section .section-heading h2,
+.services-section .section-heading-dark p,
+.services-section .section-heading-dark h2{
+  width:100%;
+  max-width:none !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  text-align:center !important;
+}
+
+.services-section .section-heading p{
+  color:#78d6ff;
+}
+
+.services-section .service-grid{
+  gap:14px;
+}
+
+.services-section .service-card{
+  position:relative;
+  min-height:150px;
+  padding:22px 72px !important;
+  display:flex !important;
+  flex-direction:column;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:10px !important;
+  text-align:center !important;
+  background:linear-gradient(180deg,#0b2033 0%,#081725 100%);
+  border-color:rgba(102,195,255,.22);
+}
+
+.services-section .service-card .service-number{
+  position:absolute;
+  left:22px;
+  top:50%;
+  transform:translateY(-50%);
+  width:34px;
+  text-align:center;
+}
+
+.services-section .service-card .service-icon{
+  margin:0 auto;
+}
+
+.services-section .service-card > span:nth-child(3){
+  width:100%;
+  max-width:540px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center !important;
+}
+
+.services-section .service-card strong,
+.services-section .service-card small{
+  width:100%;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center !important;
+}
+
+.services-section .service-card strong{
+  color:#f7fbff;
+}
+
+.services-section .service-card small{
+  color:#c2d6e6;
+}
+
+.services-section .service-card > b{
+  position:absolute;
+  right:24px;
+  top:50%;
+  transform:translateY(-50%);
+  width:30px;
+  text-align:center;
+}
+
+@media (max-width:760px){
+  .services-section .section-heading,
+  .services-section .section-heading-dark{
+    margin-bottom:28px !important;
+    padding-inline:6px;
+  }
+
+  .services-section .section-heading h2,
+  .services-section .section-heading-dark h2{
+    font-size:clamp(2.8rem,13vw,4.2rem) !important;
+    line-height:.94 !important;
+  }
+
+  .services-section .service-card{
+    min-height:160px;
+    padding:22px 58px !important;
+    border-radius:22px;
+  }
+
+  .services-section .service-card .service-number{
+    left:14px;
+    width:30px;
+  }
+
+  .services-section .service-card > b{
+    right:14px;
+    width:26px;
+  }
+
+  .services-section .service-card strong{
+    font-size:1.5rem;
+  }
+
+  .services-section .service-card small{
+    max-width:28ch;
+    font-size:.84rem;
+    line-height:1.5;
+  }
+}
