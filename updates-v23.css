@@ -165,3 +165,42 @@
     font-size:.68rem;
   }
 }
+
+/* V30: riêng card tủ lạnh cao và dài hơn, đúng dáng sản phẩm */
+.choice-section .clean-grid{
+  align-items:start;
+}
+.choice-section .clean-card:nth-child(2){
+  grid-template-rows:390px auto;
+  align-self:start;
+}
+.choice-section .clean-card:nth-child(2) .clean-card-image{
+  padding:12px 18px 0 !important;
+}
+.choice-section .clean-card:nth-child(2) .clean-card-image img{
+  width:76% !important;
+  height:100% !important;
+  object-fit:contain !important;
+  object-position:center bottom !important;
+}
+
+@media (max-width:760px){
+  .choice-section .clean-card:nth-child(2){
+    grid-template-rows:300px auto;
+  }
+  .choice-section .clean-card:nth-child(2) .clean-card-image{
+    padding:10px 14px 0 !important;
+  }
+  .choice-section .clean-card:nth-child(2) .clean-card-image img{
+    width:70% !important;
+  }
+}
+
+@media (max-width:380px){
+  .choice-section .clean-card:nth-child(2){
+    grid-template-rows:280px auto;
+  }
+  .choice-section .clean-card:nth-child(2) .clean-card-image img{
+    width:72% !important;
+  }
+}
