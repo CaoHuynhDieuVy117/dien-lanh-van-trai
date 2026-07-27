@@ -24,18 +24,18 @@
 }
 
 .services-section .service-grid{
-  gap:14px;
+  gap:16px;
 }
 
 .services-section .service-card{
   position:relative;
-  min-height:150px;
-  padding:22px 72px !important;
+  min-height:172px;
+  padding:26px 86px !important;
   display:flex !important;
   flex-direction:column;
   align-items:center !important;
   justify-content:center !important;
-  gap:10px !important;
+  gap:12px !important;
   text-align:center !important;
   background:linear-gradient(180deg,#0b2033 0%,#081725 100%);
   border-color:rgba(102,195,255,.22);
@@ -43,24 +43,31 @@
 
 .services-section .service-card .service-number{
   position:absolute;
-  left:22px;
+  left:24px;
   top:50%;
   transform:translateY(-50%);
-  width:34px;
+  width:38px;
+  color:#83a8c4 !important;
+  font-size:.88rem !important;
+  font-weight:900;
   text-align:center;
 }
 
 .services-section .service-card .service-icon{
+  width:56px !important;
+  height:56px !important;
   margin:0 auto;
+  font-size:1.35rem !important;
 }
 
 .services-section .service-card > span:nth-child(3){
   width:100%;
-  max-width:540px;
+  max-width:620px;
   display:flex;
   flex-direction:column;
   align-items:center;
   justify-content:center;
+  gap:6px;
   text-align:center !important;
 }
 
@@ -74,18 +81,24 @@
 
 .services-section .service-card strong{
   color:#f7fbff;
+  font-size:2rem !important;
+  line-height:1.08 !important;
 }
 
 .services-section .service-card small{
-  color:#c2d6e6;
+  color:#cfe1ee;
+  font-size:1.02rem !important;
+  line-height:1.5 !important;
 }
 
 .services-section .service-card > b{
   position:absolute;
-  right:24px;
+  right:26px;
   top:50%;
   transform:translateY(-50%);
-  width:30px;
+  width:34px;
+  color:#ffbc3b;
+  font-size:1.35rem !important;
   text-align:center;
 }
 
@@ -103,29 +116,38 @@
   }
 
   .services-section .service-card{
-    min-height:160px;
-    padding:22px 58px !important;
+    min-height:178px;
+    padding:24px 58px !important;
     border-radius:22px;
+    gap:11px !important;
   }
 
   .services-section .service-card .service-number{
     left:14px;
     width:30px;
+    font-size:.78rem !important;
+  }
+
+  .services-section .service-card .service-icon{
+    width:52px !important;
+    height:52px !important;
+    font-size:1.25rem !important;
   }
 
   .services-section .service-card > b{
     right:14px;
     width:26px;
+    font-size:1.2rem !important;
   }
 
   .services-section .service-card strong{
-    font-size:1.5rem;
+    font-size:1.75rem !important;
   }
 
   .services-section .service-card small{
     max-width:28ch;
-    font-size:.84rem;
-    line-height:1.5;
+    font-size:.98rem !important;
+    line-height:1.55 !important;
   }
 }
 
