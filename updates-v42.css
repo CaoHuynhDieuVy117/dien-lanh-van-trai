@@ -1,0 +1,434 @@
+/* V42: rà soát tổng thể khoảng cách, nhịp chữ và tính đồng bộ */
+
+html{
+  scroll-padding-top:104px;
+}
+
+/* Nhịp section đồng đều, không bị dính trên dưới */
+.section{
+  padding-top:96px !important;
+  padding-bottom:96px !important;
+}
+
+.trust-section,
+.final-cta{
+  padding-top:92px !important;
+  padding-bottom:92px !important;
+}
+
+/* Đồng bộ tất cả tiêu đề chính */
+.section-heading,
+.choice-section .section-heading,
+.services-section .section-heading,
+.services-section .section-heading-dark,
+.work-section .section-heading{
+  width:100%;
+  max-width:960px;
+  margin:0 auto 46px !important;
+  text-align:center !important;
+}
+
+.section-heading p,
+.choice-section .section-heading p,
+.services-section .section-heading p,
+.services-section .section-heading-dark p,
+.work-section .section-heading p{
+  width:100%;
+  margin:0 auto 20px !important;
+  color:#78d6ff !important;
+  font-size:.94rem !important;
+  font-weight:900 !important;
+  line-height:1.45 !important;
+  letter-spacing:.18em !important;
+  text-align:center !important;
+}
+
+.section-heading h2,
+.choice-section .section-heading h2,
+.services-section .section-heading h2,
+.services-section .section-heading-dark h2,
+.work-section .section-heading h2{
+  width:100%;
+  max-width:none !important;
+  margin:0 auto !important;
+  line-height:1 !important;
+  text-align:center !important;
+}
+
+/* Hero: dùng chữ thật trong HTML, bỏ lớp chữ giả */
+.hero .eyebrow{
+  margin-bottom:22px !important;
+  color:#78d6ff !important;
+  font-size:.78rem !important;
+  line-height:1.45 !important;
+  letter-spacing:.17em !important;
+  text-align:left;
+}
+
+.hero .eyebrow::after{
+  content:none !important;
+  display:none !important;
+}
+
+.hero-copy h1{
+  margin-top:0 !important;
+  row-gap:12px !important;
+}
+
+.hero-copy .price-pills{
+  margin-top:32px !important;
+}
+
+.hero-copy .hero-actions{
+  margin-top:22px !important;
+}
+
+/* Mục chọn nhanh */
+.choice-section .clean-grid{
+  gap:22px !important;
+}
+
+.choice-section .clean-card .clean-card-body{
+  gap:11px !important;
+  padding-top:26px !important;
+  padding-bottom:28px !important;
+}
+
+.choice-section .clean-card .clean-card-body small{
+  line-height:1.45 !important;
+}
+
+.choice-section .clean-card .clean-card-body strong{
+  line-height:1.08 !important;
+}
+
+.choice-section .clean-card .clean-card-body em{
+  line-height:1.62 !important;
+}
+
+/* Mục tủ lạnh: tách rõ 4 lớp chữ/nút */
+.fridge-section .fridge-heading{
+  width:100% !important;
+  max-width:980px !important;
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:28px !important;
+  margin:0 auto 48px !important;
+  text-align:center !important;
+}
+
+.fridge-section .fridge-heading > div{
+  width:100% !important;
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center !important;
+  justify-content:center !important;
+  text-align:center !important;
+}
+
+.fridge-section .fridge-heading p{
+  width:100% !important;
+  margin:0 auto 20px !important;
+  color:#78d6ff !important;
+  font-size:.94rem !important;
+  line-height:1.45 !important;
+  letter-spacing:.18em !important;
+  text-align:center !important;
+}
+
+.fridge-section .fridge-heading h2{
+  width:100% !important;
+  margin:0 auto !important;
+  line-height:.98 !important;
+  text-align:center !important;
+}
+
+.fridge-section .fridge-heading h2 em{
+  display:block !important;
+  margin:20px auto 0 !important;
+  line-height:1.08 !important;
+  text-align:center !important;
+}
+
+.fridge-section .fridge-heading .pill-link{
+  min-height:56px !important;
+  margin:2px auto 0 !important;
+  padding:0 26px !important;
+}
+
+.fridge-section .sticker-grid{
+  gap:18px !important;
+}
+
+.fridge-section .sticker-info{
+  padding-top:18px !important;
+  text-align:center !important;
+}
+
+.fridge-section .sticker-info small,
+.fridge-section .sticker-info strong,
+.fridge-section .sticker-info span{
+  text-align:center !important;
+}
+
+.fridge-section .sticker-info strong{
+  margin-top:7px !important;
+}
+
+.fridge-section .sticker-info span{
+  margin-top:7px !important;
+}
+
+/* Mục dịch vụ */
+.services-section .section-heading,
+.services-section .section-heading-dark{
+  margin-bottom:48px !important;
+}
+
+.services-section .service-grid{
+  gap:18px !important;
+}
+
+.services-section .service-card{
+  gap:14px !important;
+}
+
+.services-section .service-card > span:nth-child(3){
+  gap:8px !important;
+}
+
+/* Việc thật */
+.work-section .section-heading{
+  margin-bottom:42px !important;
+}
+
+.work-section .work-grid{
+  gap:16px !important;
+}
+
+.work-section .work-fridge-grid{
+  margin-top:22px !important;
+  gap:16px !important;
+}
+
+.work-section .real-fridge-card figcaption{
+  padding-top:18px !important;
+  padding-bottom:18px !important;
+  text-align:center !important;
+}
+
+.work-section .real-fridge-card figcaption span{
+  margin-top:7px !important;
+}
+
+/* Khối tin cậy và liên hệ cuối trang */
+.trust-copy{
+  text-align:center !important;
+}
+
+.trust-copy p{
+  margin-bottom:18px !important;
+  color:#78d6ff !important;
+  font-size:.9rem !important;
+  line-height:1.45 !important;
+  letter-spacing:.17em !important;
+  text-align:center !important;
+}
+
+.trust-copy h2{
+  line-height:.98 !important;
+  text-align:center !important;
+}
+
+.trust-tags{
+  margin-top:30px !important;
+  justify-content:center !important;
+}
+
+.final-cta-box{
+  text-align:center !important;
+}
+
+.final-cta-box > p{
+  margin-bottom:18px !important;
+  color:#78d6ff !important;
+  font-size:.9rem !important;
+  line-height:1.45 !important;
+  letter-spacing:.16em !important;
+}
+
+.final-cta-box h2{
+  line-height:1 !important;
+}
+
+.final-cta-box .cta-buttons{
+  margin-top:28px !important;
+}
+
+.final-cta-box .facebook-link{
+  margin-top:20px !important;
+}
+
+@media (max-width:760px){
+  html{
+    scroll-padding-top:92px;
+  }
+
+  .section{
+    padding-top:74px !important;
+    padding-bottom:74px !important;
+  }
+
+  .trust-section,
+  .final-cta{
+    padding-top:74px !important;
+    padding-bottom:74px !important;
+  }
+
+  .section-heading,
+  .choice-section .section-heading,
+  .services-section .section-heading,
+  .services-section .section-heading-dark,
+  .work-section .section-heading{
+    margin-bottom:34px !important;
+    padding-inline:4px;
+  }
+
+  .section-heading p,
+  .choice-section .section-heading p,
+  .services-section .section-heading p,
+  .services-section .section-heading-dark p,
+  .work-section .section-heading p{
+    margin-bottom:16px !important;
+    font-size:.84rem !important;
+    line-height:1.5 !important;
+    letter-spacing:.16em !important;
+  }
+
+  .section-heading h2,
+  .choice-section .section-heading h2,
+  .services-section .section-heading h2,
+  .services-section .section-heading-dark h2,
+  .work-section .section-heading h2{
+    line-height:.99 !important;
+  }
+
+  .hero .eyebrow{
+    margin-bottom:18px !important;
+    font-size:.72rem !important;
+    text-align:center !important;
+  }
+
+  .hero-copy{
+    text-align:center !important;
+  }
+
+  .hero-copy h1{
+    row-gap:10px !important;
+  }
+
+  .hero-copy .price-pills{
+    margin-top:26px !important;
+  }
+
+  .hero-copy .hero-actions{
+    margin-top:18px !important;
+  }
+
+  .choice-section .clean-grid{
+    gap:18px !important;
+  }
+
+  .choice-section .clean-card .clean-card-body{
+    gap:10px !important;
+    padding-top:23px !important;
+    padding-bottom:25px !important;
+  }
+
+  .fridge-section .fridge-heading{
+    gap:22px !important;
+    margin-bottom:36px !important;
+  }
+
+  .fridge-section .fridge-heading p{
+    margin-bottom:16px !important;
+    font-size:.84rem !important;
+    line-height:1.5 !important;
+    letter-spacing:.16em !important;
+  }
+
+  .fridge-section .fridge-heading h2{
+    line-height:.98 !important;
+  }
+
+  .fridge-section .fridge-heading h2 em{
+    margin-top:16px !important;
+  }
+
+  .fridge-section .fridge-heading .pill-link{
+    min-height:54px !important;
+    margin-top:2px !important;
+    padding-inline:24px !important;
+  }
+
+  .fridge-section .sticker-grid{
+    gap:16px !important;
+  }
+
+  .services-section .section-heading,
+  .services-section .section-heading-dark{
+    margin-bottom:36px !important;
+  }
+
+  .services-section .service-grid{
+    gap:16px !important;
+  }
+
+  .work-section .section-heading{
+    margin-bottom:34px !important;
+  }
+
+  .work-section .work-grid,
+  .work-section .work-fridge-grid{
+    gap:14px !important;
+  }
+
+  .trust-copy p,
+  .final-cta-box > p{
+    margin-bottom:16px !important;
+    font-size:.82rem !important;
+  }
+
+  .trust-tags{
+    margin-top:24px !important;
+  }
+
+  .final-cta-box .cta-buttons{
+    margin-top:24px !important;
+  }
+
+  .final-cta-box .facebook-link{
+    margin-top:18px !important;
+  }
+}
+
+@media (max-width:390px){
+  .section{
+    padding-top:68px !important;
+    padding-bottom:68px !important;
+  }
+
+  .section-heading,
+  .choice-section .section-heading,
+  .services-section .section-heading,
+  .services-section .section-heading-dark,
+  .work-section .section-heading{
+    margin-bottom:30px !important;
+  }
+
+  .fridge-section .fridge-heading{
+    margin-bottom:32px !important;
+  }
+}
