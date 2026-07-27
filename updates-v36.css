@@ -128,3 +128,17 @@
     line-height:1.5;
   }
 }
+
+/* V38: đổi nhãn khu vực đầu trang */
+.hero .eyebrow{
+  font-size:0 !important;
+}
+.hero .eyebrow::after{
+  content:"⌖ Tư Nghĩa · Quảng Ngãi";
+  display:inline-block;
+  color:#66cafb;
+  font-size:.74rem;
+  font-weight:900;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
