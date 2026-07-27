@@ -204,3 +204,66 @@
     width:72% !important;
   }
 }
+
+/* V31: cân lại riêng card tủ lạnh, ảnh và chữ đều nằm chính giữa */
+.choice-section .clean-card:nth-child(2){
+  grid-template-rows:350px auto;
+}
+.choice-section .clean-card:nth-child(2) .clean-card-image{
+  display:grid;
+  place-items:center;
+  padding:18px !important;
+}
+.choice-section .clean-card:nth-child(2) .clean-card-image img{
+  display:block;
+  width:auto !important;
+  height:92% !important;
+  max-width:64% !important;
+  max-height:92% !important;
+  margin:auto !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+}
+.choice-section .clean-card:nth-child(2) .clean-card-body{
+  justify-items:center;
+  align-content:center;
+  text-align:center;
+  padding:20px 18px 22px;
+}
+.choice-section .clean-card:nth-child(2) .clean-card-body small,
+.choice-section .clean-card:nth-child(2) .clean-card-body strong,
+.choice-section .clean-card:nth-child(2) .clean-card-body em{
+  width:100%;
+  text-align:center;
+}
+.choice-section .clean-card:nth-child(2) .clean-card-body em{
+  max-width:24ch;
+  margin-inline:auto;
+}
+
+@media (max-width:760px){
+  .choice-section .clean-card:nth-child(2){
+    grid-template-rows:285px auto;
+  }
+  .choice-section .clean-card:nth-child(2) .clean-card-image{
+    padding:16px !important;
+  }
+  .choice-section .clean-card:nth-child(2) .clean-card-image img{
+    width:auto !important;
+    height:90% !important;
+    max-width:58% !important;
+    max-height:90% !important;
+  }
+  .choice-section .clean-card:nth-child(2) .clean-card-body{
+    padding:19px 16px 21px;
+  }
+}
+
+@media (max-width:380px){
+  .choice-section .clean-card:nth-child(2){
+    grid-template-rows:265px auto;
+  }
+  .choice-section .clean-card:nth-child(2) .clean-card-image img{
+    max-width:62% !important;
+  }
+}
