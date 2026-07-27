@@ -1,0 +1,103 @@
+/* V35: khóa căn giữa mục tủ lạnh và ép tải bản mới trên mobile */
+
+.fridge-section .fridge-heading{
+  width:100% !important;
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) !important;
+  justify-items:center !important;
+  align-items:center !important;
+  gap:22px !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  text-align:center !important;
+}
+
+.fridge-section .fridge-heading > div{
+  width:100% !important;
+  max-width:880px !important;
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center !important;
+  justify-content:center !important;
+  margin:0 auto !important;
+  text-align:center !important;
+}
+
+.fridge-section .fridge-heading p{
+  width:100% !important;
+  max-width:none !important;
+  margin:0 auto 14px !important;
+  text-align:center !important;
+}
+
+.fridge-section .fridge-heading h2{
+  width:100% !important;
+  max-width:none !important;
+  margin:0 auto !important;
+  display:block !important;
+  text-align:center !important;
+}
+
+.fridge-section .fridge-heading h2 em{
+  width:100% !important;
+  display:block !important;
+  margin:10px auto 0 !important;
+  text-align:center !important;
+}
+
+.fridge-section .fridge-heading .pill-link{
+  justify-self:center !important;
+  align-self:center !important;
+  margin:0 auto !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  text-align:center !important;
+}
+
+@media (max-width:760px){
+  .fridge-section{
+    padding-top:64px !important;
+  }
+
+  .fridge-section .fridge-heading{
+    gap:24px !important;
+    margin-bottom:34px !important;
+    padding-inline:0 !important;
+  }
+
+  .fridge-section .fridge-heading p{
+    font-size:.78rem !important;
+    line-height:1.55 !important;
+    letter-spacing:.14em !important;
+  }
+
+  .fridge-section .fridge-heading h2{
+    font-size:clamp(3.1rem,14vw,4.6rem) !important;
+    line-height:.94 !important;
+    letter-spacing:-.055em !important;
+  }
+
+  .fridge-section .fridge-heading h2 em{
+    font-size:.52em !important;
+    line-height:1.05 !important;
+  }
+
+  .fridge-section .fridge-heading .pill-link{
+    min-width:0 !important;
+    width:auto !important;
+    max-width:100% !important;
+    min-height:54px !important;
+    padding:0 24px !important;
+  }
+
+  .fridge-section .sticker-info{
+    text-align:center !important;
+  }
+
+  .fridge-section .sticker-info small,
+  .fridge-section .sticker-info strong,
+  .fridge-section .sticker-info span{
+    text-align:center !important;
+  }
+}
