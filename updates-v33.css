@@ -162,6 +162,60 @@
     max-width:29ch;
     font-size:.88rem;
   }
+
+  /* V34: từ mục tủ lạnh trở xuống, tiêu đề và nội dung chính căn giữa */
+  .fridge-section .fridge-heading{
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+    justify-content:center !important;
+    gap:24px !important;
+    width:100%;
+    margin-bottom:30px;
+    text-align:center !important;
+  }
+  .fridge-section .fridge-heading > div{
+    width:100%;
+    margin-inline:auto;
+    text-align:center !important;
+  }
+  .fridge-section .fridge-heading p,
+  .fridge-section .fridge-heading h2,
+  .fridge-section .fridge-heading h2 span,
+  .fridge-section .fridge-heading h2 em{
+    width:100%;
+    margin-left:auto !important;
+    margin-right:auto !important;
+    text-align:center !important;
+  }
+  .fridge-section .fridge-heading .pill-link{
+    align-self:center !important;
+    justify-content:center !important;
+    margin:0 auto !important;
+    text-align:center !important;
+  }
+  .fridge-section .sticker-info,
+  .work-section .section-heading,
+  .work-section .real-fridge-card figcaption,
+  .trust-section .trust-copy,
+  .final-cta .final-cta-box{
+    text-align:center !important;
+  }
+  .fridge-section .sticker-info{
+    align-items:center !important;
+  }
+  .work-section .section-heading p,
+  .work-section .section-heading h2,
+  .trust-section .trust-copy p,
+  .trust-section .trust-copy h2,
+  .final-cta .final-cta-box p,
+  .final-cta .final-cta-box h2{
+    text-align:center !important;
+  }
+  .trust-section .trust-tags,
+  .final-cta .cta-buttons{
+    justify-content:center !important;
+  }
 }
 
 @media (max-width:380px){
